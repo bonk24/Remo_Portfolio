@@ -135,10 +135,58 @@
             width: 30%; 
             background-color: #e0e0e0; 
             padding: 10px; 
-            border-radius: 5px
-                }
+            border-radius: 5px;
+        }
+
         #media, #imagemap {
             text-align: center;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+            }
+
+            nav ul li {
+                display: block; 
+                margin: 5px 0; 
+            }
+
+            .right-nav ul li {
+                margin-right: 0;
+            }
+
+            #title {
+                flex-direction: column; /* Stack items vertically */
+                align-items: center; /* Center items */
+            }
+
+            article {
+                margin-right: 0; /* Remove right margin on smaller screens */
+                margin-bottom: 20px; /* Add bottom margin for spacing */
+            }
+
+            aside {
+                width: 100%; /* Full width on smaller screens */
+            }
+
+            iframe {
+                width: 100%; /* Make iframes responsive */
+                height: auto; /* Maintain aspect ratio */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 18px; /* Adjust font size for smaller screens */
+            }
+
+            section {
+                padding: 15px; /* Reduce padding on smaller screens */
+            }
         }
     </style>
 </head>
