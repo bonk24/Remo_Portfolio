@@ -114,11 +114,14 @@
             align-items: center;
             margin-top: 20px; 
             font-family: 'Courier New', monospace;
+            flex-wrap: wrap; /* Allow wrapping for smaller screens */
         }
         
         .info-container img {
             margin-right: 30px; 
             border-radius: 8px; 
+            max-width: 100%; /* Make image responsive */
+            height: auto; /* Maintain aspect ratio */
         }
         
         .personal-info {
@@ -126,6 +129,7 @@
             background-color: #f9f9f9; 
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1; /* Allow personal info to take available space */
         }
         
         .personal-info h2 {
@@ -153,6 +157,47 @@
             width: 100%;
             box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
         }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+            }
+
+            nav ul li {
+                display: block; 
+                margin: 5px 0; 
+            }
+
+            .right-nav ul li {
+                margin-right: 0;
+            }
+
+            .info-container {
+                flex-direction: column; /* Stack items vertically */
+                align-items: center; /* Center items */
+            }
+
+            .info-container img {
+                margin: 0 0 20px 0; /* Add margin below the image */
+            }
+
+            .personal-info {
+                padding: 20px; /* Reduce padding on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 18px; /* Adjust font size for smaller screens */
+            }
+
+            .personal-info {
+                padding: 15px; /* Further reduce padding */
+            }
+        }
     </style>
 </head>
 <body>
@@ -174,8 +219,8 @@
         </ul>
     </div>
 </div>
-<br><br>
-<div>
+
+<main>
     <section>
         <div class="info-container">
             <img src="okay.jpg" width="400" height="379" alt="Mary Jazly Remo">
@@ -193,9 +238,11 @@
             </div>    
         </div>
     </section>
-</div>
-    <br><br><br><br><br><br>
+</main>
+
 <footer>
     <p> Connect with me on <a href="https://github.com/bonk24/Remo_Portfolio.git" target="_blank"> Github </a> | &copy; 2025 My Portfolio. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
