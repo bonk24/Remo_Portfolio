@@ -142,7 +142,7 @@
             text-align: center;
         }
 
-        
+        /* Responsive Styles */
         @media (max-width: 768px) {
             .header-container {
                 flex-direction: column;
@@ -151,8 +151,8 @@
             }
 
             nav ul li {
-                display: block; 
-                margin: 5px 0; 
+                display: inline; /* Keep horizontal layout */
+                margin: 5px; /* Adjust margin for spacing */
             }
 
             .right-nav ul li {
@@ -162,6 +162,7 @@
             #title {
                 flex-direction: column; 
                 align-items: center; 
+            }
 
             article {
                 margin-right: 0; 
@@ -185,6 +186,14 @@
 
             section {
                 padding: 15px; 
+            }
+
+            nav ul li {
+                margin-right: 10px; 
+            }
+
+            .right-nav ul li {
+                margin-right: 10px; 
             }
         }
     </style>
@@ -225,10 +234,10 @@
         <h2>Image map</h2>
         <img src="images.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
 
-<map name="workmap">
-  <area shape="rect" coords="34,44,270,350" alt="Computer" href="hapi.jpg">
-  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="shock.jpg">
-</map>
+        <map name="workmap">
+            <area shape="rect" coords="34,44,270,350" alt="Computer" href="hapi.jpg">
+            <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="shock.jpg">
+        </map>
     </section>
 
     <section id="title">
@@ -236,7 +245,7 @@
         <br>
         <article>
             <h3>Paragraphs using symbol entities</h3>
-           <p>&#9748;  <br>&#9749;  <br>&#x1F30D;</p>
+            <p>&#9748;  <br>&#9749;  <br>&#x1F30D;</p>
         </article>
         <aside>
             <h4>List of Favorite Emoji </h4>
