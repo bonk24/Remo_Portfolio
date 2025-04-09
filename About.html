@@ -7,156 +7,155 @@
     <link rel="icon" href="sly.jpg">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
-        .header-container {
-            display: flex; 
-            align-items: center; 
-            background: linear-gradient(90deg, #4a90e2, #9013fe); 
-            height: 60px; 
-            padding: 0 20px;
-            position: fixed;
-            width: 100%; 
-            z-index: 1000; 
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
-        }
+.header-container {
+    display: flex; 
+    align-items: center; 
+    background: linear-gradient(90deg, #4a90e2, #9013fe); 
+    height: 60px; 
+    padding: 0 20px;
+    position: fixed;
+    width: 100%; 
+    z-index: 1000; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+}
 
-        nav {
-            margin-right: auto; 
-            color: #ffffff;
-        }
+nav {
+    margin-right: auto; 
+    color: #ffffff;
+}
 
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0; 
-            text-align: center;
-        }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+    text-align: center;
+}
 
-        nav ul li {
-            display: inline; 
-            margin-right: 20px; 
-        }
+nav ul li {
+    display: inline; 
+    margin-right: 20px; 
+}
 
-        nav ul li a {
-            color: white; 
-            text-decoration: none; 
-            padding: 10px 15px; 
-            transition: background-color 0.3s, transform 0.3s; 
-        }
+nav ul li a {
+    color: white; 
+    text-decoration: none; 
+    padding: 10px 15px; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
 
-        nav ul li a:hover {
-            background-color: rgba(255, 255, 255, 0.2); 
-            border-radius: 5px; 
-            transform: scale(1.05); 
-        }
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 5px; 
+    transform: scale(1.05); 
+}
 
-        header {
-            flex: 1; 
-            text-align: center; 
-            font-family: 'Garamond', serif;
-            font-size: 20px; 
-            font-weight: 600; 
-            color: #ffffff;
-        }
+header {
+    flex: 1; 
+    text-align: center; 
+    font-family: 'Garamond', serif;
+    font-size: 20px; 
+    font-weight: 600; 
+    color: #ffffff;
+}
 
-        .right-nav {
-            margin-left: auto; 
-            color: white;
-        }
+.right-nav {
+    margin-left: auto; 
+    color: white;
+}
 
-        .right-nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0; 
-            text-align: center; 
-        }
+.right-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+    text-align: center; 
+}
 
-        .right-nav ul li {
-            display: inline; 
-            margin-right: 100px;
-        }
+.right-nav ul li {
+    display: inline; 
+    margin-right: 100px;
+}
 
-        .right-nav ul li a {
-            color: white; 
-            text-decoration: none; 
-            padding: 10px 15px; 
-            transition: background-color 0.3s; 
-        }
+.right-nav ul li a {
+    color: white; 
+    text-decoration: none; 
+    padding: 10px 15px; 
+    transition: background-color 0.3s; 
+}
 
-        .right-nav ul li a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-            border-radius: 5px; 
-        }
+.right-nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px; 
+}
 
-        main {
-            padding: 80px 20px; 
-        }
+main {
+    padding: 80px 20px; 
+}
 
-        section {
-            background-color: #ffffff; 
-            border-radius: 8px; 
-            padding: 20px; 
-            margin-bottom: 20px; 
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-        }
+section {
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
 
-        h2, h3, h4 {
-            color: #333; 
-        }
+h2, h3, h4 {
+    color: #333; 
+}
 
-        .info-container {
-            display: flex; 
-            align-items: center;
-            margin-top: 20px; 
-            font-family: 'Courier New', monospace;
-            flex-wrap: wrap; 
-        }
-        
-        .info-container img {
-            margin-right: 30px; 
-            border-radius: 8px; 
-            max-width: 100%; 
-            height: auto; 
-        }
-        
-        .personal-info {
-            padding: 50px; 
-            background-color: #f9f9f9; 
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            flex: 1;
-        }
-        
-        .personal-info h2 {
-            margin-top: 0; 
-            color: #333; 
-        }
+.info-container {
+    display: flex; 
+    align-items: center;
+    margin-top: 20px; 
+    font-family: 'Courier New', monospace;
+    flex-wrap: wrap; 
+}
 
-        .personal-info p {
-            transition: background-color 0.3s, color 0.3s;
-            padding: 5px;
-            border-radius: 4px; 
-        }
-        
-        .personal-info p:hover {
-            background-color: rgba(74, 144, 226, 0.1); 
-            color: #4a90e2;
-        }
+.info-container img {
+    margin-right: 30px; 
+    border-radius: 8px; 
+    max-width: 100%; 
+    height: auto; 
+}
 
-        footer {
-            text-align: center;
-            padding: 15px;
-            background-color: #e0e0e0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
-        }
+.personal-info {
+    padding: 50px; 
+    background-color: #f9f9f9; 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.personal-info h2 {
+    margin-top: 0; 
+    color: #333; 
+}
+
+.personal-info p {
+    transition: background-color 0.3s, color 0.3s;
+    padding: 5px;
+    border-radius: 4px; 
+}
+
+.personal-info p:hover {
+    background-color: rgba(74, 144, 226, 0.1); 
+    color: #4a90e2;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #e0e0e0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0
 
        
         @media (max-width: 768px) {
