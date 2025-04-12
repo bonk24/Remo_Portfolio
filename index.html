@@ -1,259 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Remo's Digital Portfolio</title>
-    <link rel="icon" href="sly.jpg">
-    <style>
-       
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Remo's Digital Portfolio</title>
+  <link rel="icon" href="sly.jpg" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
 
-        .header-container {
-            display: flex;
-            align-items: center;
-            background: linear-gradient(90deg, #4a90e2, #9013fe);
-            height: 60px;
-            padding: 0 20px;
-            position: fixed;
-            width: 100%;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        }
+    .header-container {
+      display: flex;
+      align-items: center;
+      background: linear-gradient(90deg, #4a90e2, #9013fe);
+      height: 60px;
+      padding: 0 20px;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
 
-        nav {
-            margin-right: auto;
-            color: #ffffff;
-        }
+    nav {
+      margin-right: auto;
+      color: #ffffff;
+    }
 
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            text-align: center;
-        }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
 
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 15px;
-            transition: background-color 0.3s, transform 0.3s;
-        }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
 
-        nav ul li a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-            border-radius: 5px;
-            transform: scale(1.05);
-        }
+    nav ul li a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+      transform: scale(1.05);
+    }
 
-        header {
-            flex: 1;
-            text-align: center;
-            font-family: 'Garamond', serif;
-            font-size: 20px;
-            font-weight: 600;
-            color: #ffffff;
-        }
+    header {
+      flex: 1;
+      text-align: center;
+      font-family: 'Garamond', serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: #ffffff;
+    }
 
-        .right-nav {
-            margin-left: auto;
-            color: white;
-        }
+    .right-nav {
+      margin-left: auto;
+      color: white;
+    }
 
-        .right-nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            text-align: center;
-        }
+    .right-nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
 
-        .right-nav ul li {
-            display: inline;
-            margin-right: 100px;
-        }
+    .right-nav ul li {
+      display: inline;
+      margin-right: 100px;
+    }
 
-        .right-nav ul li a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 15px;
-            transition: background-color 0.3s;
-        }
+    .right-nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      transition: background-color 0.3s;
+    }
 
-        .right-nav ul li a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-            border-radius: 5px;
-        }
+    .right-nav ul li a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
 
-        main {
-            padding: 80px 20px;
-        }
+    main {
+      padding: 80px 20px;
+    }
 
-        section {
-            background-color: #ffffff;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
+    section {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-        h2, h3, h4 {
-            color: #333;
-        }
+    h2, h3, h4 {
+      color: #333;
+    }
 
-        footer {
-            text-align: center;
-            padding: 15px;
-            background-color: #e0e0e0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-        }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #e0e0e0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-        #title {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin: 20px 0;
-        }
+    #title {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin: 20px 0;
+    }
 
-        article {
-            flex: 1;
-            margin-right: 20px;
-        }
+    article {
+      flex: 1;
+      margin-right: 20px;
+    }
 
-        aside {
-            width: 30%;
-            background-color: #e0e0e0;
-            padding: 10px;
-            border-radius: 5px;
-        }
+    aside {
+      width: 30%;
+      background-color: #e0e0e0;
+      padding: 10px;
+      border-radius: 5px;
+    }
 
-        #media, #imagemap {
-            text-align: center;
-        }
+    #media, #imagemap {
+      text-align: center;
+    }
 
-        @media (max-width: 768px) {
-            .header-container {
-                flex-direction: column;
-                height: auto;
-                padding: 10px;
-            }
+    @media (max-width: 768px) {
+      .header-container {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+      }
 
-            nav ul li {
-                margin: 5px;
-            }
+      nav ul li {
+        display: inline;
+        margin: 5px;
+      }
 
-            .right-nav ul li {
-                margin-right: 10px;
-            }
+      .right-nav ul li {
+        margin-right: 10px;
+      }
 
-            #title {
-                flex-direction: column;
-                align-items: center;
-            }
+      #title {
+        flex-direction: column;
+        align-items: center;
+      }
 
-            article {
-                margin-right: 0;
-                margin-bottom: 20px;
-            }
+      article {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
 
-            aside {
-                width: 100%;
-            }
+      aside {
+        width: 100%;
+      }
 
-            iframe {
-                width: 100%;
-                height: auto;
-            }
-        }
+      iframe {
+        width: 100%;
+        height: auto;
+      }
+    }
 
-        @media (max-width: 480px) {
-            header {
-                font-size: 18px;
-            }
+    @media (max-width: 480px) {
+      header {
+        font-size: 18px;
+      }
 
-            section {
-                padding: 15px;
-            }
+      section {
+        padding: 15px;
+      }
 
-            nav ul li,
-            .right-nav ul li {
-                margin-right: 10px;
-            }
-        }
-    </style>
+      nav ul li,
+      .right-nav ul li {
+        margin-right: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<!-- HEADER REPLACED WITH SECOND FILE'S STRUCTURE -->
 <div class="header-container">
-    <nav>
-        <ul>
-            <li><a href="index.html">Studies</a></li>
-            <li><a href="index.html">School Location</a></li>
-            <li><a href="index.html">Characters</a></li>
-        </ul>
-    </nav>
-    <header>
-        <h1>My Portfolio</h1>
-    </header>
-    <div class="right-nav">
-        <ul>
-            <li><a href="#about">About Me</a></li>
-        </ul>
-    </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Studies</a></li>
+      <li><a href="index.html">School Location</a></li>
+      <li><a href="index.html">Characters</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h1>My Portfolio</h1>
+  </header>
+  <div class="right-nav">
+    <ul>
+      <li><a href="#about">About Me</a></li>
+    </ul>
+  </div>
 </div>
 
-
 <main>
+  <br><br><br><br>
+  <section id="media">
+    <h2>Media</h2>
+    <h3 id="learn">Embedded YouTube Video</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FazgJVnrVuI?si=IuEr5swdxofO5mmp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <br><br><br><br>
-    <section id="media">
-        <h2>Media</h2>
-        <h3 id="learn">Embedded YouTube Video</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/FazgJVnrVuI?si=IuEr5swdxofO5mmp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <br><br><br><br>
 
-        <h3 id="location">CEC Location</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d825.2537750382916!2d123.89602888434389!3d10.294529563842085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99bfcc60d650d%3A0x5ee73506c68dd233!2sCebu%20Eastern%20College%20Cebu%20city!5e0!3m2!1sen!2sph!4v1741792711133!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
+    <h3 id="location">CEC Location</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d825.2537750382916!2d123.89602888434389!3d10.294529563842085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99bfcc60d650d%3A0x5ee73506c68dd233!2sCebu%20Eastern%20College%20Cebu%20city!5e0!3m2!1sen!2sph!4v1741792711133!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
 
-    <section id="imagemap">
-        <h2>Image map</h2>
-        <img src="images.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+  <section id="imagemap">
+    <h2>Image map</h2>
+    <img src="images.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
 
-        <map name="workmap">
-            <area shape="rect" coords="34,44,270,350" alt="Computer" href="hapi.jpg">
-            <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="shock.jpg">
-        </map>
-    </section>
+    <map name="workmap">
+      <area shape="rect" coords="34,44,270,350" alt="Computer" href="hapi.jpg">
+      <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="shock.jpg">
+    </map>
+  </section>
 
-    <section id="title">
-        <h2>Titles containing<br>special character &apos;&gt; &amp; &lt;&apos;<br></h2>
-        <br>
-        <article>
-            <h3>Paragraphs using symbol entities</h3>
-            <p>&#9748;  <br>&#9749;  <br>&#x1F30D;</p>
-        </article>
-        <aside>
-            <h4>List of Favorite Emoji </h4>
-            <p>&#x1F355;  <br>&#x1F680;  <br>&#9977;</p>
-        </aside>
-    </section>
+  <section id="title">
+    <h2>Titles containing<br>special character &apos;&gt; &amp; &lt;&apos;<br></h2>
+    <br>
+    <article>
+      <h3>Paragraphs using symbol entities</h3>
+      <p>&#9748;  <br>&#9749;  <br>&#x1F30D;</p>
+    </article>
+    <aside>
+      <h4>List of Favorite Emoji </h4>
+      <p>&#x1F355;  <br>&#x1F680;  <br>&#9977;</p>
+    </aside>
+  </section>
 </main>
 
 <footer>
-    <p> Connect with me on <a href="https://github.com/bonk24/Remo_Portfolio.git" target="_blank"> Github </a> | &copy; 2025 My Portfolio. All rights reserved.</p>
+  <p>Connect with me on <a href="https://github.com/bonk24/Remo_Portfolio.git" target="_blank">Github</a> | &copy; 2025 My Portfolio. All rights reserved.</p>
 </footer>
 
 </body>
