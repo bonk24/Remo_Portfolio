@@ -114,14 +114,14 @@
             align-items: center;
             margin-top: 20px; 
             font-family: 'Courier New', monospace;
-            flex-wrap: wrap; /* Allow wrapping for smaller screens */
+            flex-wrap: wrap; 
         }
         
         .info-container img {
             margin-right: 30px; 
             border-radius: 8px; 
-            max-width: 100%; /* Make image responsive */
-            height: auto; /* Maintain aspect ratio */
+            max-width: 100%; 
+            height: auto; 
         }
         
         .personal-info {
@@ -129,7 +129,7 @@
             background-color: #f9f9f9; 
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            flex: 1; /* Allow personal info to take available space */
+            flex: 1;
         }
         
         .personal-info h2 {
@@ -158,7 +158,7 @@
             box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
         }
 
-        /* Media Queries for Responsiveness */
+       
         @media (max-width: 768px) {
             .header-container {
                 flex-direction: column;
@@ -176,26 +176,26 @@
             }
 
             .info-container {
-                flex-direction: column; /* Stack items vertically */
-                align-items: center; /* Center items */
+                flex-direction: column; 
+                align-items: center; 
             }
 
             .info-container img {
-                margin: 0 0 20px 0; /* Add margin below the image */
+                margin: 0 0 20px 0; 
             }
 
             .personal-info {
-                padding: 20px; /* Reduce padding on smaller screens */
+                padding: 20px;
             }
         }
 
         @media (max-width: 480px) {
             header {
-                font-size: 18px; /* Adjust font size for smaller screens */
+                font-size: 18px;
             }
 
             .personal-info {
-                padding: 15px; /* Further reduce padding */
+                padding: 15px;
             }
         }
     </style>
