@@ -1,248 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Remo's Digital Portfolio</title>
-    <link rel="icon" href="sly.jpg">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Remo's Digital Portfolio</title>
+  <link rel="icon" href="sly.jpg" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
 
-        .header-container {
-            display: flex; 
-            align-items: center; 
-            background: linear-gradient(90deg, #4a90e2, #9013fe); 
-            height: 60px; 
-            padding: 0 20px;
-            position: fixed;
-            width: 100%; 
-            z-index: 1000; 
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
-        }
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(90deg, #4a90e2, #9013fe);
+      height: 60px;
+      padding: 0 20px;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
 
-        nav {
-            margin-right: auto; 
-            color: #ffffff;
-        }
+    nav ul, .right-nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 20px;
+    }
 
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0; 
-            text-align: center;
-        }
+    nav ul li a,
+    .right-nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
 
-        nav ul li {
-            display: inline; 
-            margin-right: 20px; 
-        }
+    nav ul li a:hover,
+    .right-nav ul li a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+      transform: scale(1.05);
+    }
 
-        nav ul li a {
-            color: white; 
-            text-decoration: none; 
-            padding: 10px 15px; 
-            transition: background-color 0.3s, transform 0.3s; 
-        }
+    .right-nav {
+      display: flex;
+      justify-content: flex-start; 
+    }
 
-        nav ul li a:hover {
-            background-color: rgba(255, 255, 255, 0.2); 
-            border-radius: 5px; 
-            transform: scale(1.05); 
-        }
+    .right-nav ul li a {
+      background-color: #9013fe;
+      border-radius: 5px;
+      padding: 12px 20px;
+      font-weight: 500;
+    }
 
-        header {
-            flex: 1; 
-            text-align: center; 
-            font-family: 'Garamond', serif;
-            font-size: 20px; 
-            font-weight: 600; 
-            color: #ffffff;
-        }
+    header {
+      flex: 1;
+      text-align: center;
+      font-family: 'Garamond', serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: #ffffff;
+    }
 
-        .right-nav {
-            margin-left: auto; 
-            color: white;
-        }
+    main {
+      padding: 80px 20px;
+    }
 
-        .right-nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0; 
-            text-align: center; 
-        }
+    section {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-        .right-nav ul li {
-            display: inline; 
-            margin-right: 100px;
-        }
+    h2, h3, h4 {
+      color: #333;
+    }
 
-        .right-nav ul li a {
-            color: white; 
-            text-decoration: none; 
-            padding: 10px 15px; 
-            transition: background-color 0.3s; 
-        }
+    .info-container {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      font-family: 'Courier New', monospace;
+      flex-wrap: wrap;
+    }
 
-        .right-nav ul li a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-            border-radius: 5px; 
-        }
+    .info-container img {
+      margin-right: 30px;
+      border-radius: 8px;
+      max-width: 100%;
+      height: auto;
+    }
 
-        main {
-            padding: 80px 20px; 
-        }
+    .personal-info {
+      padding: 50px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      flex: 1;
+    }
 
-        section {
-            background-color: #ffffff; 
-            border-radius: 8px; 
-            padding: 20px; 
-            margin-bottom: 20px; 
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-        }
+    .personal-info h2 {
+      margin-top: 0;
+      color: #333;
+    }
 
-        h2, h3, h4 {
-            color: #333; 
-        }
+    .personal-info p {
+      transition: background-color 0.3s, color 0.3s;
+      padding: 5px;
+      border-radius: 4px;
+    }
 
-        .info-container {
-            display: flex; 
-            align-items: center;
-            margin-top: 20px; 
-            font-family: 'Courier New', monospace;
-            flex-wrap: wrap; 
-        }
-        
-        .info-container img {
-            margin-right: 30px; 
-            border-radius: 8px; 
-            max-width: 100%; 
-            height: auto; 
-        }
-        
-        .personal-info {
-            padding: 50px; 
-            background-color: #f9f9f9; 
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            flex: 1;
-        }
-        
-        .personal-info h2 {
-            margin-top: 0; 
-            color: #333; 
-        }
+    .personal-info p:hover {
+      background-color: rgba(74, 144, 226, 0.1);
+      color: #4a90e2;
+    }
 
-        .personal-info p {
-            transition: background-color 0.3s, color 0.3s;
-            padding: 5px;
-            border-radius: 4px; 
-        }
-        
-        .personal-info p:hover {
-            background-color: rgba(74, 144, 226, 0.1); 
-            color: #4a90e2;
-        }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #e0e0e0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-        footer {
-            text-align: center;
-            padding: 15px;
-            background-color: #e0e0e0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
-        }
+    @media (max-width: 768px) {
+      .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+        text-align: center;
+      }
 
-       
-        @media (max-width: 768px) {
-            .header-container {
-                flex-direction: column;
-                height: auto;
-                padding: 10px;
-            }
+      nav ul, .right-nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+      }
 
-            nav ul li {
-                display: block; 
-                margin: 5px 0; 
-            }
+      nav ul li, .right-nav ul li {
+        display: inline-block;
+        margin: 0 10px;
+      }
 
-            .right-nav ul li {
-                margin-right: 0;
-            }
+      .info-container {
+        flex-direction: column;
+        align-items: center;
+      }
 
-            .info-container {
-                flex-direction: column; 
-                align-items: center; 
-            }
+      .info-container img {
+        margin: 0 0 20px 0;
+      }
 
-            .info-container img {
-                margin: 0 0 20px 0; 
-            }
+      .personal-info {
+        padding: 20px;
+      }
+    }
 
-            .personal-info {
-                padding: 20px;
-            }
-        }
+    @media (max-width: 480px) {
+      header {
+        font-size: 18px;
+      }
 
-        @media (max-width: 480px) {
-            header {
-                font-size: 18px;
-            }
-
-            .personal-info {
-                padding: 15px;
-            }
-        }
-    </style>
+      .personal-info {
+        padding: 15px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<div class="header-container">
+ 
+  <div class="header-container">
     <nav>
-        <ul>
-            <li><a href="index.html">Studies</a></li>
-            <li><a href="index.html">School Location</a></li>
-            <li><a href="index.html">Characters</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Studies</a></li>
+        <li><a href="index.html">School Location</a></li>
+        <li><a href="index.html">Characters</a></li>
+      </ul>
     </nav>
+
     <header>
-        <h1>My Portfolio</h1>
+      <h1 style="margin: 0;">My Portfolio</h1>
     </header>
+
     <div class="right-nav">
-        <ul>
-            <li><a href="#about">About Me</a></li>
-        </ul>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+      </ul>
     </div>
-</div>
+  </div>
 
-<main>
-    <section>
-        <div class="info-container">
-            <img src="okay.jpg" width="400" height="379" alt="Mary Jazly Remo">
-            <div class="personal-info">
-                <h2>Personal Information</h2>
-                <p>Name: Mary Jazly Remo</p>
-                <p>Age: 22 years old</p>
-                <p>Elementary: Mabolo Elementary School</p>
-                <p>High School: Colegio de la Inmaculada del Concepcion-Cebu</p>
-                <p>College: Cebu Eastern College</p>
-                <p>Email: remomaryjazly@gmail.com</p>
-                <p>Contact No.: 09122345678</p>
-                <br><br>
-                <p>I am interested in Full-Stack Development and Cybersecurity <br> Willing to learn and hone my skills for my future career path.</p>
-            </div>    
+  
+  <main>
+    <section id="about">
+      <div class="info-container">
+        <img src="okay.jpg" width="400" height="379" alt="Mary Jazly Remo" />
+        <div class="personal-info">
+          <h2>Personal Information</h2>
+          <p>Name: Mary Jazly Remo</p>
+          <p>Age: 22 years old</p>
+          <p>Elementary: Mabolo Elementary School</p>
+          <p>High School: Colegio de la Inmaculada del Concepcion-Cebu</p>
+          <p>College: Cebu Eastern College</p>
+          <p>Email: remomaryjazly@gmail.com</p>
+          <p>Contact No.: 09122345678</p>
+          <br /><br />
+          <p>
+            I am interested in Full-Stack Development and Cybersecurity
+            <br />
+            Willing to learn and hone my skills for my future career path.
+          </p>
         </div>
+      </div>
     </section>
-</main>
+  </main>
 
-<footer>
-    <p> Connect with me on <a href="https://github.com/bonk24/Remo_Portfolio.git" target="_blank"> Github </a> | &copy; 2025 My Portfolio. All rights reserved.</p>
-</footer>
+
+  <footer>
+    <p>
+      Connect with me on
+      <a href="https://github.com/bonk24/Remo_Portfolio.git" target="_blank">Github</a> |
+      &copy; 2025 My Portfolio. All rights reserved.
+    </p>
+  </footer>
 
 </body>
 </html>
