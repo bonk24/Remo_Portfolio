@@ -14,138 +14,137 @@
         }
 
         .header-container {
-            display: flex;
-            align-items: center;
-            background: linear-gradient(90deg, #4a90e2, #9013fe);
-            height: 60px;
+            display: flex; 
+            align-items: center; 
+            background: linear-gradient(90deg, #4a90e2, #9013fe); 
+            height: 60px; 
             padding: 0 20px;
             position: fixed;
-            width: 100%;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            width: 100%; 
+            z-index: 1000; 
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
         }
 
         nav {
-            margin-right: auto;
+            margin-right: auto; 
             color: #ffffff;
         }
 
         nav ul {
             list-style-type: none;
             padding: 0;
-            margin: 0;
+            margin: 0; 
             text-align: center;
         }
 
         nav ul li {
-            display: inline;
-            margin-right: 20px;
+            display: inline; 
+            margin-right: 20px; 
         }
 
         nav ul li a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 15px;
-            transition: background-color 0.3s, transform 0.3s;
+            color: white; 
+            text-decoration: none; 
+            padding: 10px 15px; 
+            transition: background-color 0.3s, transform 0.3s; 
         }
 
         nav ul li a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-            border-radius: 5px;
-            transform: scale(1.05);
+            background-color: rgba(255, 255, 255, 0.2); 
+            border-radius: 5px; 
+            transform: scale(1.05); 
         }
 
         header {
-            flex: 1;
-            text-align: center;
+            flex: 1; 
+            text-align: center; 
             font-family: 'Garamond', serif;
-            font-size: 20px;
-            font-weight: 600;
+            font-size: 20px; 
+            font-weight: 600; 
             color: #ffffff;
         }
 
         .right-nav {
-            margin-left: auto;
+            margin-left: auto; 
             color: white;
         }
 
         .right-nav ul {
             list-style-type: none;
             padding: 0;
-            margin: 0;
-            text-align: center;
+            margin: 0; 
+            text-align: center; 
         }
 
         .right-nav ul li {
-            display: inline;
+            display: inline; 
             margin-right: 100px;
         }
 
         .right-nav ul li a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 15px;
-            transition: background-color 0.3s;
+            color: white; 
+            text-decoration: none; 
+            padding: 10px 15px; 
+            transition: background-color 0.3s; 
         }
 
         .right-nav ul li a:hover {
             background-color: rgba(255, 255, 255, 0.2);
-            border-radius: 5px;
+            border-radius: 5px; 
         }
 
         main {
-            padding: 80px 20px;
+            padding: 80px 20px; 
         }
 
         section {
-            background-color: #ffffff;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff; 
+            border-radius: 8px; 
+            padding: 20px; 
+            margin-bottom: 20px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
         }
 
         h2, h3, h4 {
-            color: #333;
+            color: #333; 
         }
 
         .info-container {
-            display: flex;
+            display: flex; 
             align-items: center;
-            margin-top: 20px;
+            margin-top: 20px; 
             font-family: 'Courier New', monospace;
-            flex-wrap: wrap;
+            flex-wrap: wrap; /* Allow wrapping for smaller screens */
         }
-
+        
         .info-container img {
-            margin-right: 30px;
-            border-radius: 8px;
-            max-width: 100%;
-            height: auto;
+            margin-right: 30px; 
+            border-radius: 8px; 
+            max-width: 100%; /* Make image responsive */
+            height: auto; /* Maintain aspect ratio */
         }
-
+        
         .personal-info {
-            padding: 50px;
-            background-color: #f9f9f9;
+            padding: 50px; 
+            background-color: #f9f9f9; 
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            flex: 1;
-            min-width: 280px;
+            flex: 1; /* Allow personal info to take available space */
         }
-
+        
         .personal-info h2 {
-            margin-top: 0;
-            color: #333;
+            margin-top: 0; 
+            color: #333; 
         }
 
         .personal-info p {
             transition: background-color 0.3s, color 0.3s;
             padding: 5px;
-            border-radius: 4px;
+            border-radius: 4px; 
         }
-
+        
         .personal-info p:hover {
-            background-color: rgba(74, 144, 226, 0.1);
+            background-color: rgba(74, 144, 226, 0.1); 
             color: #4a90e2;
         }
 
@@ -156,10 +155,10 @@
             position: relative;
             bottom: 0;
             width: 100%;
-            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
         }
 
-       
+        /* Media Queries for Responsiveness */
         @media (max-width: 768px) {
             .header-container {
                 flex-direction: column;
@@ -168,41 +167,35 @@
             }
 
             nav ul li {
-                display: inline;
-                margin: 5px;
+                display: block; 
+                margin: 5px 0; 
             }
 
             .right-nav ul li {
-                margin-right: 10px;
+                margin-right: 0;
             }
 
             .info-container {
-                flex-direction: column;
-                align-items: center;
+                flex-direction: column; /* Stack items vertically */
+                align-items: center; /* Center items */
             }
 
             .info-container img {
-                margin: 0 0 20px 0;
+                margin: 0 0 20px 0; /* Add margin below the image */
             }
 
             .personal-info {
-                padding: 20px;
-                width: 100%;
+                padding: 20px; /* Reduce padding on smaller screens */
             }
         }
 
         @media (max-width: 480px) {
             header {
-                font-size: 18px;
+                font-size: 18px; /* Adjust font size for smaller screens */
             }
 
             .personal-info {
-                padding: 15px;
-            }
-
-            nav ul li,
-            .right-nav ul li {
-                margin-right: 10px;
+                padding: 15px; /* Further reduce padding */
             }
         }
     </style>
@@ -241,7 +234,7 @@
                 <p>Email: remomaryjazly@gmail.com</p>
                 <p>Contact No.: 09122345678</p>
                 <br><br>
-                <p>I am interested in Full-Stack Development and Cybersecurity. <br>Willing to learn and hone my skills for my future career path.</p>
+                <p>I am interested in Full-Stack Development and Cybersecurity <br> Willing to learn and hone my skills for my future career path.</p>
             </div>    
         </div>
     </section>
