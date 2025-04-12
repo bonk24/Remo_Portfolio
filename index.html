@@ -6,109 +6,110 @@
     <title>Remo's Digital Portfolio</title>
     <link rel="icon" href="sly.jpg">
     <style>
+        /* KEEPING THE STYLES FROM THE SECOND FILE */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4; 
+            background-color: #f4f4f4;
         }
-        
+
         .header-container {
-            display: flex; 
+            display: flex;
             align-items: center;
-            background: linear-gradient(90deg, #4a90e2, #9013fe); 
-            height: 60px; 
-            padding: 0 20px; 
+            background: linear-gradient(90deg, #4a90e2, #9013fe);
+            height: 60px;
+            padding: 0 20px;
             position: fixed;
-            width: 100%; 
-            z-index: 1000; 
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
         }
-        
+
         nav {
-            margin-right: auto; 
-            color: #ffffff; 
+            margin-right: auto;
+            color: #ffffff;
         }
-        
+
         nav ul {
             list-style-type: none;
             padding: 0;
-            margin: 0; 
+            margin: 0;
             text-align: center;
         }
-        
+
         nav ul li {
-            display: inline; 
-            margin-right: 20px; 
+            display: inline;
+            margin-right: 20px;
         }
-        
+
         nav ul li a {
-            color: white; 
-            text-decoration: none; 
-            padding: 10px 15px; 
-            transition: background-color 0.3s, transform 0.3s; 
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s, transform 0.3s;
         }
-        
+
         nav ul li a:hover {
-            background-color: rgba(255, 255, 255, 0.2); 
-            border-radius: 5px; 
-            transform: scale(1.05); 
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            transform: scale(1.05);
         }
-        
+
         header {
-            flex: 1; 
-            text-align: center; 
+            flex: 1;
+            text-align: center;
             font-family: 'Garamond', serif;
-            font-size: 20px; 
-            font-weight: 600; 
-            color: #ffffff; 
+            font-size: 20px;
+            font-weight: 600;
+            color: #ffffff;
         }
-        
+
         .right-nav {
-            margin-left: auto; 
-            color: white; 
+            margin-left: auto;
+            color: white;
         }
-        
+
         .right-nav ul {
             list-style-type: none;
             padding: 0;
-            margin: 0; 
-            text-align: center; 
+            margin: 0;
+            text-align: center;
         }
-        
+
         .right-nav ul li {
-            display: inline; 
+            display: inline;
             margin-right: 100px;
         }
-        
+
         .right-nav ul li a {
-            color: white; 
-            text-decoration: none; 
-            padding: 10px 15px; 
-            transition: background-color 0.3s; 
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
         }
-        
+
         .right-nav ul li a:hover {
-            background-color: rgba(255, 255, 255, 0.2); 
-            border-radius: 5px; 
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
         }
-        
+
         main {
             padding: 80px 20px;
         }
-        
+
         section {
             background-color: #ffffff;
             border-radius: 8px;
-            padding: 20px; 
-            margin-bottom: 20px; 
+            padding: 20px;
+            margin-bottom: 20px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        
+
         h2, h3, h4 {
-            color: #333; 
+            color: #333;
         }
-        
+
         footer {
             text-align: center;
             padding: 15px;
@@ -116,25 +117,25 @@
             position: relative;
             bottom: 0;
             width: 100%;
-            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
         }
-        
+
         #title {
-            display: flex; 
-            justify-content: space-between; 
-            align-items: flex-start; 
-            margin: 20px 0; 
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 20px 0;
         }
-        
+
         article {
-            flex: 1; 
-            margin-right: 20px; 
+            flex: 1;
+            margin-right: 20px;
         }
-        
+
         aside {
-            width: 30%; 
-            background-color: #e0e0e0; 
-            padding: 10px; 
+            width: 30%;
+            background-color: #e0e0e0;
+            padding: 10px;
             border-radius: 5px;
         }
 
@@ -142,7 +143,6 @@
             text-align: center;
         }
 
-        /* Responsive Styles */
         @media (max-width: 768px) {
             .header-container {
                 flex-direction: column;
@@ -151,31 +151,30 @@
             }
 
             nav ul li {
-                display: inline; /* Keep horizontal layout */
-                margin: 5px; /* Adjust margin for spacing */
+                margin: 5px;
             }
 
             .right-nav ul li {
-                margin-right: 0;
+                margin-right: 10px;
             }
 
             #title {
-                flex-direction: column; 
-                align-items: center; 
+                flex-direction: column;
+                align-items: center;
             }
 
             article {
-                margin-right: 0; 
-                margin-bottom: 20px; 
+                margin-right: 0;
+                margin-bottom: 20px;
             }
 
             aside {
-                width: 100%; 
+                width: 100%;
             }
 
             iframe {
-                width: 100%; 
-                height: auto; 
+                width: 100%;
+                height: auto;
             }
         }
 
@@ -185,27 +184,25 @@
             }
 
             section {
-                padding: 15px; 
+                padding: 15px;
             }
 
-            nav ul li {
-                margin-right: 10px; 
-            }
-
+            nav ul li,
             .right-nav ul li {
-                margin-right: 10px; 
+                margin-right: 10px;
             }
         }
     </style>
 </head>
 <body>
 
+<!-- HEADER REPLACED WITH SECOND FILE'S STRUCTURE -->
 <div class="header-container">
     <nav>
         <ul>
-            <li><a href="#learn">Studies</a></li>
-            <li><a href="#location">School Location</a></li>
-            <li><a href="#title">Characters</a></li>
+            <li><a href="index.html">Studies</a></li>
+            <li><a href="index.html">School Location</a></li>
+            <li><a href="index.html">Characters</a></li>
         </ul>
     </nav>
     <header>
@@ -213,11 +210,12 @@
     </header>
     <div class="right-nav">
         <ul>
-            <li><a href="About.html">About Me</a></li>
+            <li><a href="#about">About Me</a></li>
         </ul>
     </div>
 </div>
 
+<!-- ORIGINAL MAIN CONTENT FROM FIRST FILE -->
 <main>
     <br><br><br><br>
     <section id="media">
